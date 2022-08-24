@@ -1,44 +1,44 @@
 <template>
   <v-app>
     <v-app-bar
-      app
-      color="primary"
-      dark
+        app
+        color="primary"
+        dark
     >
       <div class="d-flex align-center">
         <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
+            alt="Vuetify Logo"
+            class="shrink mr-2"
+            contain
+            src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+            transition="scale-transition"
+            width="40"
         />
 
         <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
+            alt="Vuetify Name"
+            class="shrink mt-1 hidden-sm-and-down"
+            contain
+            min-width="100"
+            src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
+            width="100"
         />
       </div>
 
       <v-spacer></v-spacer>
 
       <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
+          v-show="showSignUpButton"
+          href="#"
+          target="_blank"
+          text
       >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
+        <span class="mr-2">Sign Up</span>
       </v-btn>
     </v-app-bar>
 
     <v-main>
-      <router-view/>
+      <router-view />
     </v-main>
   </v-app>
 </template>
@@ -49,7 +49,24 @@ export default {
   name: 'App',
 
   data: () => ({
-    //
+    showSignUpButton: false,
+    time: 0
   }),
+
+  mounted() {
+    let _video = document.getElementById('video');
+    this.time = 0;
+    const view = this
+    _video.ontimeupdate = function () {
+      let currentTime = Math.floor(_video.currentTime);
+      if (currentTime !== view.time) {
+        view.time = currentTime;
+        if(view.time === 45) {
+          view.showSignUpButton = true;
+        }
+      }
+    };
+  },
+
 };
 </script>
