@@ -38,13 +38,12 @@
     </v-app-bar>
 
     <v-main>
-      <router-view />
+      <router-view/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-
 export default {
   name: 'App',
 
@@ -52,16 +51,23 @@ export default {
     showSignUpButton: false,
     time: 0
   }),
+  methods: {
+
+  },
 
   mounted() {
-    let _video = document.getElementById('video');
+    let _video = document.getElementById('video')
+    _video.setAttribute('oncontextmenu', "return false;");
+
     this.time = 0;
     const view = this
     _video.ontimeupdate = function () {
       let currentTime = Math.floor(_video.currentTime);
       if (currentTime !== view.time) {
+        console.log(view.time, 't')
         view.time = currentTime;
-        if(view.time === 45) {
+        if (view.time === 10) {
+          console.log(view.time, 'time')
           view.showSignUpButton = true;
         }
       }
@@ -70,3 +76,18 @@ export default {
 
 };
 </script>
+
+<style>
+video::-webkit-media-controls-timeline {
+  display: none;
+}
+video::-webkit-media-controls-timeline {
+  display: none;
+}
+video::-webkit-media-controls-current-time-display  {
+  display: none;
+}
+video::-webkit-media-controls-time-remaining-display{
+  display: none;
+}
+</style>
