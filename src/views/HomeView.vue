@@ -10,7 +10,7 @@
       >
         <source src="../assets/video.mp4" type="video/mp4">
       </video>
-      <div id="overlay" v-if="showOverlay" @click="[showOverlay ? playVideo() : pauseVideo()]"
+      <div id="overlay" v-if="showOverlay && allowOverlay" @click="[showOverlay ? playVideo() : pauseVideo()]"
            class="d-flex justify-center align-center"
       >
         <v-btn
@@ -24,6 +24,13 @@
         </v-btn>
       </div>
     </div>
+    <div class="mx-auto" style="width: 100%">
+      <v-checkbox
+          v-model="allowOverlay"
+          label="Allow/Show Overlay"
+          color="red"
+          hide-details class="mx-auto"/>
+    </div>
   </div>
 </template>
 
@@ -34,6 +41,7 @@ export default {
     return {
       video: '',
       supposedCurrentTime: '',
+      allowOverlay: true,
       showOverlay: true,
       icon: 'mdi-play',
     }
