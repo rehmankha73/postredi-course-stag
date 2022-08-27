@@ -51,9 +51,6 @@ export default {
     showSignUpButton: false,
     time: 0
   }),
-  methods: {
-
-  },
 
   mounted() {
     let _video = document.getElementById('video')
