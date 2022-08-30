@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import PcafView from '../views/PcafView.vue'
 import SignUp from "../views/auth/signUp";
+import ProductsList from "@/views/ProductsList";
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/auth/sign-up',
     name: 'SignUp',
     component: SignUp,
+  },
+  {
+    path: '/products',
+    name: 'ProductsList',
+    component: ProductsList
   }
 
 ]

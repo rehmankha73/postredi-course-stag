@@ -1,5 +1,5 @@
 <template>
-  <div class="pa-4  mx-auto " style="margin-top: 130px; max-width: 1100px">
+  <div class="pa-4 mx-auto " style="margin-top: 130px; max-width: 1100px">
 
     <div class="pa-0 ma-0">
       <p style="font-family: 'Adamina', serif !important; font-size: 22px !important; ">PRIVATE CAPITAL ATTRACTION
