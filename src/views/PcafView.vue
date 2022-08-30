@@ -49,8 +49,8 @@
       </v-col>
     </v-row>
 
-    <v-row class="">
-      <v-col cols="12" class="">
+    <v-row >
+      <v-col cols="12">
         <div class="mx-auto overlay-div">
           <video id="video" controls class="video"
                  @play="playVideo()"
@@ -81,8 +81,8 @@
     <div class="d-flex justify-center align-center pa-8 mt-12" style="gap: 20px"
          :class="[$vuetify.breakpoint.mdAndDown ? 'flex-column' : 'flex-row']"
     >
-      <p class="text-h6 mb-0 nav-item">Privacy Policy</p>
-      <p class="text-h6 mb-0 nav-item">TERMS OF SERVICE</p>
+      <p class="text-h6 mb-0 nav-item"><a href="https://nassauinvests.com/privacy-policy">Privacy Policy</a></p>
+      <p class="text-h6 mb-0 nav-item"><a href="https://nassauinvests.com/terms-of-service">TERMS OF SERVICE</a></p>
     </div>
 
     <div class="d-flex justify-center align-center mb-4">

@@ -9,6 +9,7 @@
     >
       <section class="d-flex align-center mx-auto" style=" width: 100%; max-width: 1100px !important;">
         <img
+            id="logo"
             alt="Vuetify Logo"
             class="shrink mr-2"
             src="./assets/pcaf_3.png"
@@ -105,7 +106,7 @@
       <router-view/>
     </v-main>
 
-    <v-navigation-drawer app v-model="drawer" color="black px-10" temporary width="100%">
+    <v-navigation-drawer app v-model="drawer" color="px-10" temporary width="100%" style="background-color: #161616">
       <div class="d-flex justify-end my-4">
         <div class="py-4">
           <v-icon @click="drawer = !drawer" class="mobile-nav-item">mdi-close</v-icon>
@@ -162,7 +163,7 @@
 
       <v-divider class="my-2 bg-gray"/>
 
-      <v-row>
+      <v-row >
         <v-expansion-panels accordion dark>
           <v-expansion-panel style="background-color: transparent">
             <v-expansion-panel-header class="px-4 my-4"><span class="mobile-nav-item">Learn</span>
@@ -229,6 +230,19 @@ export default {
     drawer: false,
   }),
 
+  mounted() {
+    window.addEventListener('scroll', () => {
+      if(window.pageYOffset > 0) {
+        document.getElementById('logo').style.width = '200px';
+      }
+
+      if(window.pageYOffset === 0) {
+        document.getElementById('logo').style.width = '300px';
+      }
+
+    });
+  }
+
 };
 </script>
 
@@ -236,6 +250,16 @@ export default {
 .border {
   border: 1px solid black;
 }
+
+#logo {
+  width: 300px;
+  transition: width 1s, transform 1s;
+}
+
+/*#logo:hover {*/
+/*  width: 300px;*/
+/*  transform: scaleX(1);*/
+/*}*/
 
 .nav-item {
   font-size: 18px !important;
@@ -248,13 +272,13 @@ a:visited {
 }
 
 .mobile-nav-item {
-  font-size: 26px !important;
+  font-size: 24px !important;
   cursor: pointer !important;
   color: white !important;
 }
 
 .mobile-nav-sub-item {
-  font-size: 20px !important;
+  font-size: 18px !important;
   cursor: pointer !important;
   color: gray !important;
 }
@@ -280,6 +304,7 @@ a {
 }
 
 .mobile-nav-item > a, .mobile-nav-sub-item > a {
+  display: block !important;
   color: white !important;
 }
 
