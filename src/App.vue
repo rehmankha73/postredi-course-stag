@@ -86,13 +86,7 @@
 
           <p class="nav-item">
             <a href="https://investors.appfolioim.com/nassauinvestmentsllc/investor/login" target="_blank">
-              Investor
-            </a>
-          </p>
-
-          <p class="nav-item">
-            <a href="https://investors.appfolioim.com/nassauinvestmentsllc/investor/login" target="_blank">
-              Log In
+              Investor Log In
             </a>
           </p>
         </div>
@@ -206,15 +200,7 @@
 
       <p class="mobile-nav-item my-4">
         <a href="https://investors.appfolioim.com/nassauinvestmentsllc/investor/login" target="_blank">
-          Investor
-        </a>
-      </p>
-
-      <v-divider class="my-2 bg-gray"/>
-
-      <p class="mobile-nav-item my-4">
-        <a href="https://investors.appfolioim.com/nassauinvestmentsllc/investor/login" target="_blank">
-          Log In
+          Investor Log In
         </a>
       </p>
     </v-navigation-drawer>
@@ -255,11 +241,6 @@ export default {
   width: 300px;
   transition: width 1s, transform 1s;
 }
-
-/*#logo:hover {*/
-/*  width: 300px;*/
-/*  transform: scaleX(1);*/
-/*}*/
 
 .nav-item {
   font-size: 18px !important;

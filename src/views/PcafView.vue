@@ -45,7 +45,7 @@
         >PRIVATE CAPITAL ATTRACTION FORMULA - GET IT NOW! ($997)</h1>
       </v-col>
       <v-col v-if="showSignUpButton" cols="12" md="3" class="d-flex justify-center align-center">
-        <button class="buy-now-btn">BUY NOW</button>
+        <RouterLink to="/auth/sign-up" class="buy-now-btn">BUY NOW</RouterLink>
       </v-col>
     </v-row>
 

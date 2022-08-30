@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import PcafView from '../views/PcafView.vue'
+import SignUp from "../views/auth/signUp";
 
 Vue.use(VueRouter)
 
@@ -16,6 +17,11 @@ const routes = [
     name: 'PcafView',
     component: PcafView
   },
+  {
+    path: '/auth/sign-up',
+    name: 'SignUp',
+    component: SignUp,
+  }
 
 ]
 
