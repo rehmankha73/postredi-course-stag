@@ -1,5 +1,5 @@
 <template>
-  <div class="pa-4 mx-auto " style="margin-top: 130px; max-width: 1100px">
+  <div class="pa-4 mx-auto" style="margin-top: 130px; max-width: 1100px">
 
     <div class="pa-0 ma-0">
       <p style="font-family: 'Adamina', serif !important; font-size: 22px !important; ">PRIVATE CAPITAL ATTRACTION
@@ -49,10 +49,10 @@
       </v-col>
     </v-row>
 
-    <v-row >
-      <v-col cols="12">
-        <div class="mx-auto overlay-div">
-          <video id="video" controls class="video"
+    <v-row>
+      <v-col cols="12" class="d-flex justify-center">
+        <div class="overlay-div d-flex justify-center">
+          <video id="video" controls class="video mx-auto"
                  @play="playVideo()"
                  @pause="pauseVideo()"
                  @timeupdate="timeUpdate()"
@@ -192,17 +192,17 @@ p {
   font-family: 'Poppins', sans-serif !important;
 }
 
-#navbar {
-  overflow: hidden;
-  background-color: white;
-}
+/*#navbar {*/
+/*  overflow: hidden;*/
+/*  background-color: white;*/
+/*}*/
 
-.sticky-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
+/*.sticky-nav {*/
+/*  position: fixed;*/
+/*  top: 0;*/
+/*  width: 100%;*/
+/*  z-index: 1;*/
+/*}*/
 
 .nav-item {
   font-size: 18px !important;
@@ -232,7 +232,8 @@ p {
 }
 
 .video {
-  width: 100%;
+  width: 95% ;
+  max-width: 800px;
 }
 
 .buy-now-btn {

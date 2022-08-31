@@ -18,81 +18,81 @@
 
         <v-spacer></v-spacer>
 
-        <div v-if="$vuetify.breakpoint.mdAndUp" class="d-flex align-center pt-4 px-6" style="gap: 20px">
+<!--        <div v-if="$vuetify.breakpoint.mdAndUp" class="d-flex align-center pt-4 px-6" style="gap: 20px">-->
 
-          <v-menu offset-y>
-            <template v-slot:activator="{ on, attrs }">
-              <p
-                  v-bind="attrs"
-                  v-on="on"
-                  class="nav-item"
-              >
-                Why
-                <v-icon>mdi-chevron-down</v-icon>
-              </p>
-            </template>
-            <v-list>
-              <v-list-item>
-                <v-list-item-title class="nav-item"><a href="https://nassauinvests.com/why-hotels">Why Hotels</a>
-                </v-list-item-title>
-              </v-list-item>
+<!--          <v-menu offset-y>-->
+<!--            <template v-slot:activator="{ on, attrs }">-->
+<!--              <p-->
+<!--                  v-bind="attrs"-->
+<!--                  v-on="on"-->
+<!--                  class="nav-item"-->
+<!--              >-->
+<!--                Why-->
+<!--                <v-icon>mdi-chevron-down</v-icon>-->
+<!--              </p>-->
+<!--            </template>-->
+<!--            <v-list>-->
+<!--              <v-list-item>-->
+<!--                <v-list-item-title class="nav-item"><a href="https://nassauinvests.com/why-hotels">Why Hotels</a>-->
+<!--                </v-list-item-title>-->
+<!--              </v-list-item>-->
 
-              <v-list-item>
-                <v-list-item-title class="nav-item"><a href="https://nassauinvests.com/why-apartments">Why
-                  Apartments</a></v-list-item-title>
-              </v-list-item>
+<!--              <v-list-item>-->
+<!--                <v-list-item-title class="nav-item"><a href="https://nassauinvests.com/why-apartments">Why-->
+<!--                  Apartments</a></v-list-item-title>-->
+<!--              </v-list-item>-->
 
-              <v-list-item>
-                <v-list-item-title class="nav-item"><a href="https://nassauinvests.com/why-nassau-investments">Why
-                  Nassau Investments</a></v-list-item-title>
-              </v-list-item>
+<!--              <v-list-item>-->
+<!--                <v-list-item-title class="nav-item"><a href="https://nassauinvests.com/why-nassau-investments">Why-->
+<!--                  Nassau Investments</a></v-list-item-title>-->
+<!--              </v-list-item>-->
 
-              <v-list-item>
-                <v-list-item-title class="nav-item"><a href="https://nassauinvests.com/why-syndication">Why
-                  Syndication</a></v-list-item-title>
-              </v-list-item>
-            </v-list>
-          </v-menu>
+<!--              <v-list-item>-->
+<!--                <v-list-item-title class="nav-item"><a href="https://nassauinvests.com/why-syndication">Why-->
+<!--                  Syndication</a></v-list-item-title>-->
+<!--              </v-list-item>-->
+<!--            </v-list>-->
+<!--          </v-menu>-->
 
-          <v-menu offset-y>
-            <template v-slot:activator="{ on, attrs }">
-              <p
-                  v-bind="attrs"
-                  v-on="on"
-                  class="nav-item"
-              >
-                Learn
-                <v-icon>mdi-chevron-down</v-icon>
-              </p>
-            </template>
-            <v-list>
-              <v-list-item>
-                <v-list-item-title class="nav-item"><a href="https://nassauinvests.com/podcasts">Podcasts</a>
-                </v-list-item-title>
-              </v-list-item>
+<!--          <v-menu offset-y>-->
+<!--            <template v-slot:activator="{ on, attrs }">-->
+<!--              <p-->
+<!--                  v-bind="attrs"-->
+<!--                  v-on="on"-->
+<!--                  class="nav-item"-->
+<!--              >-->
+<!--                Learn-->
+<!--                <v-icon>mdi-chevron-down</v-icon>-->
+<!--              </p>-->
+<!--            </template>-->
+<!--            <v-list>-->
+<!--              <v-list-item>-->
+<!--                <v-list-item-title class="nav-item"><a href="https://nassauinvests.com/podcasts">Podcasts</a>-->
+<!--                </v-list-item-title>-->
+<!--              </v-list-item>-->
 
-              <v-list-item>
-                <v-list-item-title class="nav-item"><a href="https://nassauinvests.com/book">Book</a>
-                </v-list-item-title>
-              </v-list-item>
-            </v-list>
-          </v-menu>
+<!--              <v-list-item>-->
+<!--                <v-list-item-title class="nav-item"><a href="https://nassauinvests.com/book">Book</a>-->
+<!--                </v-list-item-title>-->
+<!--              </v-list-item>-->
+<!--            </v-list>-->
+<!--          </v-menu>-->
 
-          <p class="nav-item">
-            <a href="https://nassauinvests.com/blog">
-              Blog
-            </a>
-          </p>
+<!--          <p class="nav-item">-->
+<!--            <a href="https://nassauinvests.com/blog">-->
+<!--              Blog-->
+<!--            </a>-->
+<!--          </p>-->
 
-          <p class="nav-item">
-            <a href="https://investors.appfolioim.com/nassauinvestmentsllc/investor/login" target="_blank">
-              Investor Log In
-            </a>
-          </p>
-        </div>
-        <div v-else class="px-6">
-          <v-icon @click="drawer = !drawer" large>mdi-menu</v-icon>
-        </div>
+<!--          <p class="nav-item">-->
+<!--            <a href="https://investors.appfolioim.com/nassauinvestmentsllc/investor/login" target="_blank">-->
+<!--              Investor Log In-->
+<!--            </a>-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <div v-else class="px-6">-->
+<!--          <v-icon @click="drawer = !drawer" large>mdi-menu</v-icon>-->
+<!--        </div>-->
       </section>
     </v-app-bar>
 

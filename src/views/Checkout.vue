@@ -1,7 +1,7 @@
 <template>
   <div class="border d-flex justify-center align-center" style="margin-top: 140px">
     <div class="border" style="width: 100%; max-width: 1100px">
-      <form id="payment-form">
+      <form id="payment-form" class="mx-auto my-4">
         <div id="payment-element">
           <!--Stripe.js injects the Payment Element-->
         </div>
