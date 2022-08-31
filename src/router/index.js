@@ -4,6 +4,7 @@ import HomeView from '../views/HomeView.vue'
 import PcafView from '../views/PcafView.vue'
 import SignUp from "../views/auth/signUp";
 import ProductsList from "@/views/ProductsList";
+import Checkout from "@/views/Checkout";
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/products',
     name: 'ProductsList',
     component: ProductsList
+  },
+  {
+    path: '/checkout',
+    name: 'Checkout',
+    component: Checkout
   }
 
 ]
